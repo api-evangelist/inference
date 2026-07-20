@@ -1,0 +1,26 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.inference.net/reference/api-keys
+docs: https://docs.inference.net/reference/api-keys
+summary:
+  types: [apiKey]
+  api_key_in: [header]
+  scheme: bearer
+schemes:
+- name: apiKey
+  type: http
+  scheme: bearer
+  in: header
+  header: Authorization
+  format: "Authorization: Bearer <api-key>"
+  env: INFERENCE_API_KEY
+  base_url: https://api.inference.net/v1
+  description: >-
+    Pass the project API key as a Bearer token in the Authorization header. Keys are
+    project-scoped and carry read/write permission levels. The API is OpenAI-compatible,
+    so the same key works with the OpenAI SDK by setting base_url to
+    https://api.inference.net/v1.
+notes:
+- Keys are managed in the dashboard, scoped per project, with read/write permissions.
+- The hosted MCP server (https://mcp.inference.net/mcp) uses the same Bearer project key.
+- CLI (`inf`) supports interactive sign-in and API-key auth for CI.
