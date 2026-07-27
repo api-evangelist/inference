@@ -1,0 +1,25 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.inference.net/reference/rate-limits
+docs: https://docs.inference.net/reference/rate-limits
+scope: requests-per-minute
+rate_limits:
+- tier: Free
+  limit_count: 30
+  unit: requests
+  window: minute
+- tier: Paid
+  limit_count: 250
+  unit: requests
+  window: minute
+- tier: Custom teams
+  limit_count: 500
+  limit_count_max: 1000000
+  unit: requests
+  window: minute
+  note: Per-team overrides ranging 500 to 1,000,000 RPM.
+- tier: Deployed models
+  limit_count: 300
+  unit: requests
+  window: minute
+  note: 300 RPM per instance.

@@ -1,0 +1,40 @@
+generated: '2026-07-19'
+method: searched
+source: https://inference.net/pricing
+docs: https://inference.net/pricing
+currency: USD
+plans:
+- name: Pay as you go
+  price: 0
+  price_unit: month
+  model: usage
+  description: >-
+    Entry tier for evaluation and first projects; usage-based ($0+) with included
+    monthly credits toward fine-tuning, evals, gateway routing, and observability.
+  limits:
+    gateway_requests_per_month: 1000000
+    tracing_spans_per_month: 1000000
+    data_retention_days: 14
+    seats: 1
+    rate_limit_rpm: 30
+- name: Growth
+  price: 250
+  price_unit: month
+  model: subscription
+  description: Production workloads at scale.
+  limits:
+    gateway_requests_per_month: 50000000
+    tracing_spans_per_month: 50000000
+    data_retention: unlimited
+    seats: unlimited
+    rate_limit_rpm: 250
+- name: Enterprise
+  price: custom
+  model: contract
+  description: >-
+    Custom contracts, dedicated infrastructure, direct support, and custom model
+    training. Contact sales.
+notes:
+- All plans include monthly credits applicable toward fine-tuning, evals, gateway
+  routing, and observability.
+- Per-token model pricing is listed per-model in the models catalog (https://inference.net/models).

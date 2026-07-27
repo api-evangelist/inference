@@ -1,27 +1,125 @@
 aid: inference
 name: Inference
-description: 'Inference is a company surfaced as a portfolio company of multicoin-capital and added to
-  the API Evangelist network as a stub for enrichment. Sector: crypto-web3. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Inference (inference.net) is an AI infrastructure platform for AI-native
+  teams. It offers an OpenAI-compatible inference API for open-source, frontier, and
+  custom fine-tuned language models, alongside Catalyst — its observability, tracing,
+  evaluation, training, and deployment platform. Developers call chat completions,
+  batch/async inference, function calling, structured outputs, and vision endpoints
+  at https://api.inference.net/v1 using a Bearer API key; route and monitor traffic
+  through the Catalyst Gateway; fine-tune and deploy custom models; and optimize agents
+  end to end with HALO. The platform ships a first-party CLI (inf), a hosted MCP server,
+  and webhooks for asynchronous inference. Backed by Multicoin Capital.'
 url: https://raw.githubusercontent.com/api-evangelist/inference/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - multicoin-capital
-x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier: profiled
+x-tier-reason: enrichment-pipeline
+accessModel:
+  pricing: freemium
+  onboarding: self-serve
+  trial: false
+  try_now: true
+  public: false
+  label: Freemium · Self-serve signup
+  confidence: high
+  source:
+  - plans
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://inference.net/og/home.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Artificial Intelligence
+- Machine Learning
+- LLM
+- Inference
+- Observability
+- Model Training
+- Model Deployment
+- MCP
 - Crypto Web3
-apis: []
+apis:
+- name: Inference.net API
+  description: 'OpenAI-compatible inference API for open-source, frontier, and custom
+    language models — chat completions, batch/async inference, function calling, structured
+    outputs, and vision — authenticated with a Bearer API key.'
+  humanURL: https://docs.inference.net/api/api-quickstart
+  baseURL: https://api.inference.net/v1
+  tags:
+  - LLM
+  - Inference
+  - OpenAI Compatible
+  properties:
+  - type: Documentation
+    url: https://docs.inference.net
+  - type: APIReference
+    url: https://docs.inference.net/api/api-quickstart
+  - type: Authentication
+    url: https://docs.inference.net/reference/api-keys
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/inference-domain-security.yml
 - type: Website
-  url: https://inference.supply
+  url: https://inference.net
+- type: DeveloperPortal
+  url: https://docs.inference.net
+- type: Documentation
+  url: https://docs.inference.net
+- type: APIReference
+  url: https://docs.inference.net/api/api-quickstart
+- type: GettingStarted
+  url: https://docs.inference.net/api/api-quickstart
+- type: Blog
+  url: https://inference.net/blog
+- type: Pricing
+  url: https://inference.net/pricing
+- type: SignUp
+  url: https://inference.net/register
+- type: Login
+  url: https://inference.net/signin
+- type: TermsOfService
+  url: https://inference.net/terms-of-service
+- type: PrivacyPolicy
+  url: https://inference.net/privacy-policy
+- type: GitHubOrganization
+  url: https://github.com/context-labs
+- type: TrustCenter
+  url: https://trust.inference.net
+- type: Authentication
+  url: authentication/inference-authentication.yml
+- type: RateLimits
+  url: rate-limits/inference-rate-limits.yml
+- type: Plans
+  url: plans/inference-plans.yml
+- type: MCPServer
+  url: mcp/inference-mcp.yml
+- type: CLI
+  url: cli/inference-cli.yml
+- type: Packages
+  url: packages/inference-packages.yml
+- type: Conventions
+  url: conventions/inference-conventions.yml
+- type: Lifecycle
+  url: lifecycle/inference-lifecycle.yml
+- type: Webhooks
+  url: asyncapi/inference-webhooks.yml
+- type: Conformance
+  url: conformance/inference-conformance.yml
+- type: LLMsTxt
+  url: llms/inference-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

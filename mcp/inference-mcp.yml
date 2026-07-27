@@ -1,0 +1,31 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.inference.net/integrations/mcp-server
+status: published
+server:
+  name: inference
+  transport: http
+  url: https://mcp.inference.net/mcp
+  authentication:
+    type: bearer
+    description: 'Project API key passed as `Authorization: Bearer <your-project-api-key>`.'
+description: >-
+  The Inference MCP server lets compatible AI coding assistants query and operate
+  Catalyst resources (projects, agents, models, datasets, rubrics, evals, training
+  jobs, deployments, inferences, traces, and HALO reports) directly from a project.
+  Hosted, remote HTTP transport with a custom Authorization header.
+clients:
+- Claude Code
+- Cursor
+- VS Code
+- Windsurf
+- Codex
+- OpenCode
+- Gemini CLI
+capabilities:
+- Project inspection and agent management
+- Model, dataset, rubric, and evaluation access
+- Training job and deployment monitoring
+- Inference history and trace analysis
+- HALO agent-trace report generation and fix application
+- Scheduling management for automated HALO runs

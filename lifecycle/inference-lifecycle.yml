@@ -1,0 +1,20 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.inference.net
+versioning:
+  scheme: uri-path
+  current: v1
+  base_url: https://api.inference.net/v1
+  docs: https://docs.inference.net/api/api-quickstart
+data_retention:
+  docs: https://docs.inference.net/api/data-retention
+  summary: >-
+    Request data is not used for model training by default. Encryption in transit
+    and at rest; secrets stripped where possible; project-level retention controls,
+    environment/task-ID segmentation. Pay-as-you-go retains 14 days; Growth and
+    above unlimited (configurable). No-retention handling available on request.
+status_page: null
+deprecation: null
+notes:
+- No public status page was found (status.inference.net returned 404 on probe).
+- No published versioning-deprecation/Sunset-header policy was found; not asserted.

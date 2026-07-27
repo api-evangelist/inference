@@ -1,0 +1,33 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.inference.net/cli/overview
+notes: >-
+  Inference.net exposes an OpenAI-compatible API and recommends the standard OpenAI
+  SDKs (Python `openai`, Node `openai`) as the client libraries — these are
+  third-party, not first-party. The one first-party published package is the
+  Inference CLI (`inf`). No dedicated first-party server SDK was found on npm/PyPI.
+packages:
+- language: javascript
+  registry: npm
+  name: "@inference/cli"
+  url: https://www.npmjs.com/package/@inference/cli
+  install: npm install -g @inference/cli
+  binary: inf
+  official: true
+  kind: cli
+- language: python
+  registry: pypi
+  name: openai
+  url: https://pypi.org/project/openai/
+  install: pip install openai
+  official: false
+  kind: sdk
+  note: OpenAI SDK used against base_url https://api.inference.net/v1 (OpenAI-compatible).
+- language: javascript
+  registry: npm
+  name: openai
+  url: https://www.npmjs.com/package/openai
+  install: npm install openai
+  official: false
+  kind: sdk
+  note: OpenAI SDK used against baseURL https://api.inference.net/v1 (OpenAI-compatible).

@@ -1,0 +1,120 @@
+# Inference.net Documentation
+
+> Use Inference.net to observe, evaluate, train, and deploy LLM systems.
+
+## Docs
+
+- [API Quickstart](https://docs.inference.net/api/api-quickstart.md): Get started with the Inference.net API
+- [Batch API](https://docs.inference.net/api/async-inference/batch-api.md): Process jobs asynchronously with Batch API.
+- [Group API](https://docs.inference.net/api/async-inference/group.md): Submit multiple asynchronous inference requests as a single group for easier tracking and webhook notifications.
+- [Overview](https://docs.inference.net/api/async-inference/overview.md): Make cost-effective inference requests with flexible completion times.
+- [Getting Started With Webhooks](https://docs.inference.net/api/async-inference/webhooks/getting-started-with-webhooks.md): Everything you need to know to get started with webhooks.
+- [Webhooks: Quick Reference](https://docs.inference.net/api/async-inference/webhooks/quick-reference.md): Quick reference of webhook support for asynchronous inference
+- [Data Retention](https://docs.inference.net/api/data-retention.md): Understand how Inference.net handles request data, observability records, and retention controls.
+- [Function Calling](https://docs.inference.net/api/function-calling.md): Enable models to fetch data and take actions.
+- [Rate Limits](https://docs.inference.net/api/rate-limits.md): Rate limits for the Inference.net API
+- [Structured Outputs](https://docs.inference.net/api/structured-outputs.md): Ensure responses adhere to a JSON schema.
+- [Vision](https://docs.inference.net/api/vision.md): Use models to extract information from images.
+- [Authentication](https://docs.inference.net/cli/authentication.md): Sign in interactively, use an API key for CI, and manage CLI credentials.
+- [Dashboard](https://docs.inference.net/cli/dashboard.md): Launch the interactive terminal dashboard for a live overview of your project.
+- [Datasets](https://docs.inference.net/cli/datasets.md): Upload JSONL inference data, materialize eval/training datasets, and download them.
+- [Evals](https://docs.inference.net/cli/evals.md): Create rubrics, launch eval runs, and inspect results from the terminal.
+- [HALO](https://docs.inference.net/cli/halo.md): Run HALO agent-trace analyses, schedule recurring reports, and pull report markdown from the CLI.
+- [Inferences](https://docs.inference.net/cli/inferences.md): List, filter, sort, and export inference requests and responses captured by Gateway.
+- [Instrument](https://docs.inference.net/cli/instrument.md): Automatically instrument your codebase to route LLM calls through Inference.net Catalyst using an AI coding agent.
+- [Models](https://docs.inference.net/cli/models.md): Browse callable models, providers, capabilities, and pricing from the terminal.
+- [Install CLI](https://docs.inference.net/cli/overview.md)
+- [Projects](https://docs.inference.net/cli/projects.md): List, switch, and inspect your Inference.net projects.
+- [Spans](https://docs.inference.net/cli/spans.md): Search spans, inspect span payloads, and debug trace steps from the CLI.
+- [Traces](https://docs.inference.net/cli/traces.md): Browse trace trees, inspect trace facets, and manage trace exports from the CLI.
+- [Training](https://docs.inference.net/cli/training.md): Queue training runs, discover recipes and base models, monitor progress, and surface failures.
+- [Analyze Your Traces](https://docs.inference.net/get-started/analyze-traces.md)
+- [Capture Your First Trace](https://docs.inference.net/get-started/capture-first-trace.md)
+- [Record Your First LLM Call](https://docs.inference.net/get-started/record-first-call.md)
+- [Run Your First Eval](https://docs.inference.net/get-started/run-first-eval.md)
+- [Signals](https://docs.inference.net/get-started/signals.md): Define plain-language signals that automatically classify your agent's traffic (sentiment, jailbreak attempts, NSFW content, task outcomes, anything you can describe) and alert on them.
+- [Train and Deploy a Custom Model](https://docs.inference.net/get-started/train-and-deploy.md): Train a task-specific model using demo data, deploy it, and see how it performs.
+- [HALO Desktop: Optimize an Agent End to End on Your Machine](https://docs.inference.net/guides/halo-desktop-app.md): Run the full trace, analyze, fix loop entirely on your own machine with the free HALO desktop app. Load demo traces from Hugging Face, explore them in a local timeline, run HALO with your own model provider, and hand the report to Claude Code, Cursor, or Codex. No account, no cloud.
+- [Measure Your Agent's Quality with Signals](https://docs.inference.net/guides/measure-agent-quality.md): Define plain-language signals and let an LLM judge label every span, trace, or session automatically and turn your agent's traffic into quality metrics you can chart, filter, and get alerted on.
+- [Optimize an Agent End to End with Catalyst Tracing and HALO](https://docs.inference.net/guides/optimize-an-agent-end-to-end.md)
+- [Guides](https://docs.inference.net/guides/overview.md): End-to-end walkthroughs that string the Catalyst platform together into a single workflow.
+- [Try HALO End to End with a Demo Repo](https://docs.inference.net/guides/try-halo-demo-repo.md): Clone a ready-to-run instrumented search agent, seed real traces, run HALO to find what's wrong, and let your coding agent apply the fix through the MCP server. The full loop in about fifteen minutes with zero instrumentation work.
+- [ElevenLabs](https://docs.inference.net/integrations/agent-platforms/elevenlabs.md): Route an ElevenLabs Agent's LLM calls through Inference Catalyst to any supported model — including Anthropic Claude — for full observability.
+- [LangChain](https://docs.inference.net/integrations/frameworks/langchain.md): Route supported LangChain OpenAI and Anthropic wrappers through Inference.net while preserving provider routing, environments, and task metadata.
+- [Vercel AI SDK](https://docs.inference.net/integrations/frameworks/vercel-ai-sdk.md): Route Vercel AI SDK traffic through Inference.net using the OpenAI-compatible provider, preserving provider routing, environments, and task metadata.
+- [Gateway](https://docs.inference.net/integrations/gateway/overview.md): Route LLM traffic through the Catalyst Gateway with a one-line base URL change. Capture requests, watch usage, build datasets, and run evals on the same traffic.
+- [Gateway Quickstart](https://docs.inference.net/integrations/gateway/quickstart.md): Route your first LLM request through the Catalyst Gateway and see it land in the dashboard.
+- [Install with AI](https://docs.inference.net/integrations/install-with-ai.md): Use the Inference CLI and an AI coding agent to instrument your codebase automatically.
+- [MCP Server](https://docs.inference.net/integrations/mcp-server.md): Connect AI coding assistants to Catalyst resources with your Inference API key.
+- [Amazon Bedrock](https://docs.inference.net/integrations/model-providers/amazon-bedrock.md): Route Amazon Bedrock model calls through Inference Catalyst for full observability.
+- [Anthropic](https://docs.inference.net/integrations/model-providers/anthropic.md): Route Anthropic requests through Inference Catalyst for full observability.
+- [Cerebras](https://docs.inference.net/integrations/model-providers/cerebras.md): Route Cerebras requests through Inference Catalyst for full observability.
+- [Google Gemini](https://docs.inference.net/integrations/model-providers/google-gemini.md): Route direct Gemini API calls through Catalyst using native Gemini endpoints.
+- [Groq](https://docs.inference.net/integrations/model-providers/groq.md): Route Groq requests through Inference Catalyst for full observability.
+- [OpenAI](https://docs.inference.net/integrations/model-providers/openai.md): Route OpenAI requests through Inference Catalyst for full observability.
+- [OpenRouter](https://docs.inference.net/integrations/model-providers/openrouter.md): Route OpenRouter requests through Inference Catalyst for full observability.
+- [Vertex AI](https://docs.inference.net/integrations/model-providers/vertex-ai.md): Route Vertex AI Gemini and Anthropic model calls through Catalyst.
+- [Integrations](https://docs.inference.net/integrations/overview.md): Connect Catalyst to your existing tooling, model providers, and frameworks.
+- [Agent Identity](https://docs.inference.net/integrations/traces/agent-identity.md): Add stable agent IDs and display names so Catalyst groups agent executions correctly.
+- [Vercel AI SDK Traces](https://docs.inference.net/integrations/traces/ai-sdk.md): Trace Vercel AI SDK generateText, streamText, ToolLoopAgent, tool calls, structured output, and usage through Catalyst.
+- [Anthropic Traces](https://docs.inference.net/integrations/traces/anthropic.md): Trace Anthropic Messages API calls, tool use, and prompt caching.
+- [Attributes And Span Kinds](https://docs.inference.net/integrations/traces/attributes.md): Reference for the OpenInference attribute constants and span-kind enum exported by the Catalyst tracing SDKs.
+- [Claude Agent SDK Traces](https://docs.inference.net/integrations/traces/claude-agent-sdk.md): Trace Claude Agent SDK query loops and yielded agent messages.
+- [Claude Code SDK Traces](https://docs.inference.net/integrations/traces/claude-code-sdk.md): Trace Claude Code CLI and SDK-style invocations with OpenInference AGENT spans.
+- [Cursor SDK Traces](https://docs.inference.net/integrations/traces/cursor-sdk.md): Trace Cursor agent runs, streamed messages, wait results, and tool calls.
+- [ElevenLabs Agents Traces](https://docs.inference.net/integrations/traces/elevenlabs.md): Trace ElevenLabs Agents conversation sessions, transcripts, and client tool calls.
+- [Vercel Eve Traces](https://docs.inference.net/integrations/traces/eve.md): Trace Eve agent turns, model calls, tool execution, session lineage, and AI SDK v7 telemetry through Catalyst.
+- [Snippets](https://docs.inference.net/integrations/traces/examples.md): Copyable tracing patterns for providers, frameworks, agents, tool loops, structured outputs, prompt caching, handoffs, and custom subprocess work.
+- [Span Handle API](https://docs.inference.net/integrations/traces/handle-api.md): Reference for the typed span handle yielded by agentSpan, agent_span, manualSpan, and manual_span.
+- [LangChain Traces](https://docs.inference.net/integrations/traces/langchain.md): Capture LangChain chains, agents, LLM calls, and tools through Catalyst callback instrumentation.
+- [Langfuse Traces](https://docs.inference.net/integrations/traces/langfuse.md): Send Langfuse SDK traces to Catalyst without changing your tracing code.
+- [LangGraph Traces](https://docs.inference.net/integrations/traces/langgraph.md): Trace LangGraph workflows while preserving graph and node parent-child spans.
+- [LangSmith Traces](https://docs.inference.net/integrations/traces/langsmith.md): Bridge LangSmith OpenTelemetry spans into the Catalyst tracer provider.
+- [LiveKit Agents Traces](https://docs.inference.net/integrations/traces/livekit-agents.md): Trace LiveKit Agents sessions, model calls, and function tools through LiveKit's native OpenTelemetry spans.
+- [Manual Spans](https://docs.inference.net/integrations/traces/manual-spans.md): Author OpenInference-shaped spans for tools, retrievers, custom routers, CLI subprocesses, and anything else the SDK does not patch automatically.
+- [OpenAI Traces](https://docs.inference.net/integrations/traces/openai.md): Trace OpenAI Chat Completions, tool calls, structured outputs, and Responses API calls.
+- [OpenAI Agents Traces](https://docs.inference.net/integrations/traces/openai-agents.md): Trace OpenAI Agents runs, tool calls, handoffs, and nested OpenAI model calls.
+- [OpenCode Traces](https://docs.inference.net/integrations/traces/opencode.md): Record traces of your own OpenCode coding sessions to Catalyst.
+- [Traces](https://docs.inference.net/integrations/traces/overview.md): Capture the full execution of your AI apps and agents with first-party OpenInference-shaped tracing SDKs for TypeScript and Python.
+- [PI AI Traces](https://docs.inference.net/integrations/traces/pi-ai.md): Trace PI AI model turns, streamed output, tool calls, token usage, costs, and agent identity through Catalyst.
+- [Production Agent Example](https://docs.inference.net/integrations/traces/production-agent-example.md): A production-shaped agent with custom tool execution, end to end. Memoized setup, parent agent span, per-tool TOOL spans, domain attributes, and graceful shutdown.
+- [Pydantic AI Traces](https://docs.inference.net/integrations/traces/pydantic-ai.md): Trace Pydantic AI agents, tool calls, and structured outputs through native OpenTelemetry instrumentation.
+- [Traces Quickstart](https://docs.inference.net/integrations/traces/quickstart.md): Install a Catalyst tracing SDK, configure export, and capture your first trace.
+- [Traces Troubleshooting](https://docs.inference.net/integrations/traces/troubleshooting.md): Debug missing spans, missing attributes, and shutdown behavior.
+- [Catalyst by Inference.net](https://docs.inference.net/introduction.md)
+- [Build a Dataset from Traffic](https://docs.inference.net/platform/datasets/build-from-traffic.md): Turn production traffic into datasets for evaluation and training.
+- [Dataset Formats and Schemas](https://docs.inference.net/platform/datasets/formats.md): JSONL upload formats, required fields, validation rules, and upload limits.
+- [Datasets](https://docs.inference.net/platform/datasets/overview.md): Curate datasets from production traffic or your own files for evals and training.
+- [Upload a Dataset](https://docs.inference.net/platform/datasets/upload-a-dataset.md): Import JSONL inference data, then turn it into eval or training datasets.
+- [Call Your Deployment](https://docs.inference.net/platform/deploy/call-your-deployment.md): Connect to your deployed model using the OpenAI-compatible API.
+- [Deploy a Trained Model](https://docs.inference.net/platform/deploy/deploy-a-model.md): Go from a completed training run to a live endpoint in a few clicks.
+- [Manage and Monitor](https://docs.inference.net/platform/deploy/manage-and-monitor.md): Start, stop, and delete deployments. Monitor production performance and scale when you need to.
+- [Open Source Models](https://docs.inference.net/platform/deploy/open-source-models.md): Deploy off-the-shelf open source models or bring your own trained models.
+- [Deploy](https://docs.inference.net/platform/deploy/overview.md): Dedicated GPU infrastructure for serving trained models via an OpenAI-compatible API.
+- [Serverless Deployments](https://docs.inference.net/platform/deploy/serverless-deployments.md): Platform-wide deployments billed per token, or offered for free.
+- [How LLM-as-a-Judge Works](https://docs.inference.net/platform/eval/llm-as-a-judge.md): The evaluation mechanism that scores model outputs against your rubric criteria.
+- [Offline vs Online Evaluation](https://docs.inference.net/platform/eval/offline-vs-online.md): Running evals against collected samples vs scoring live production traffic.
+- [Eval](https://docs.inference.net/platform/eval/overview.md): Measure model quality with rubrics scored by LLM judges. Know which model is better and by how much.
+- [Read the Results](https://docs.inference.net/platform/eval/read-the-results.md): Interpret the side-by-side comparison view and decide which model wins.
+- [Run a Model Comparison](https://docs.inference.net/platform/eval/run-a-comparison.md): Run your eval dataset through multiple models and score the outputs against your rubric.
+- [Writing Rubrics](https://docs.inference.net/platform/eval/write-a-rubric.md): Create evaluation rubrics from templates, AI generation, or plain English.
+- [How to Create a Task](https://docs.inference.net/platform/gateway/create-a-task.md)
+- [Inference Viewer](https://docs.inference.net/platform/gateway/inference-viewer.md): Browse, filter, and inspect individual LLM requests and responses.
+- [Integrate](https://docs.inference.net/platform/gateway/integrate.md): Collect data from your AI application for evaluation and training
+- [Metrics Explorer](https://docs.inference.net/platform/gateway/metrics-explorer.md): Dashboards for cost, latency, errors, and token usage across all your LLM calls.
+- [Gateway](https://docs.inference.net/platform/gateway/overview.md): Record and analyze your production LLM traffic
+- [Prompt Versions](https://docs.inference.net/platform/gateway/prompt-versions.md): Catalyst records a hash of each prompt so you can track changes and see which inferences used which version.
+- [Tasks Overview](https://docs.inference.net/platform/gateway/tasks.md): Group LLM calls by objective to track metrics, run evaluations, and train models
+- [After Training Completes](https://docs.inference.net/platform/train/after-training.md): What you get when training finishes and how to evaluate the result before deploying.
+- [AutoTrainer](https://docs.inference.net/platform/train/autotrainer.md): Automatically distill a task onto a smaller, cheaper model. AutoTrainer collects samples from your live traffic, trains a distilled model, and cuts traffic over — no datasets, rubrics, or training runs to manage.
+- [Choose a Recipe](https://docs.inference.net/platform/train/choose-a-recipe.md): Pre-configured training setups that abstract away base model selection and training parameters.
+- [Launch a Training Run](https://docs.inference.net/platform/train/launch-a-run.md): Start a training job from the dashboard — select your datasets, rubric, and recipe, then start training.
+- [Monitor a Training Run](https://docs.inference.net/platform/train/mid-training-evals.md): Track training progress with real-time graphs, eval scores, and GPU logs.
+- [Train](https://docs.inference.net/platform/train/overview.md): Fine-tune task-specific models using your data and eval criteria. The platform handles base model selection, parameters, and compute.
+- [Troubleshooting Training Failures](https://docs.inference.net/platform/train/troubleshooting.md): Common training failures, what they look like, and how to recover.
+- [API Keys and Authentication](https://docs.inference.net/reference/api-keys.md): Where to find your API key, how authentication works, and security best practices.
+- [Glossary](https://docs.inference.net/reference/glossary.md): Quick-reference definitions for Catalyst concepts and terminology.
+- [Rate Limits](https://docs.inference.net/reference/rate-limits.md): Request limits, what happens when you hit them, and how to request higher limits.
+- [Catalyst Workflow](https://docs.inference.net/workflow.md): How Tracing and Gateway fit together across the Catalyst platform.
+- [ClipTagger](https://docs.inference.net/workhorse-models/cliptagger.md): Programmatic video understanding built for massive scale
+- [Schematron](https://docs.inference.net/workhorse-models/schematron.md): Schema-guided extraction from messy HTML

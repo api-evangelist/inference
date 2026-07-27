@@ -1,0 +1,49 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.inference.net/api/api-quickstart
+docs: https://docs.inference.net
+summary: >-
+  Cross-cutting request/response semantics for the Inference.net API. The API is
+  OpenAI-compatible: request and response envelopes mirror the OpenAI Chat
+  Completions schema, so existing OpenAI SDKs and tooling work by pointing base_url
+  at https://api.inference.net/v1.
+authentication:
+  style: bearer-api-key
+  header: Authorization
+  ref: authentication/inference-authentication.yml
+compatibility:
+  standard: openai-api
+  base_url: https://api.inference.net/v1
+  description: >-
+    OpenAI-compatible endpoints (chat completions and related). Use the OpenAI SDK
+    or plain HTTP.
+capabilities:
+  function_calling:
+    supported: true
+    docs: https://docs.inference.net/api/function-calling
+  structured_outputs:
+    supported: true
+    docs: https://docs.inference.net/api/structured-outputs
+  vision:
+    supported: true
+    docs: https://docs.inference.net/api/vision
+async_inference:
+  supported: true
+  modes: [batch, group]
+  docs: https://docs.inference.net/api/async-inference/overview
+  description: >-
+    Cost-effective asynchronous inference with flexible completion times; results
+    delivered via webhooks (see asyncapi/inference-webhooks.yml).
+rate_limit_signaling:
+  scope: requests-per-minute
+  ref: rate-limits/inference-rate-limits.yml
+versioning:
+  scheme: uri-path
+  current: v1
+  ref: lifecycle/inference-lifecycle.yml
+data_retention:
+  docs: https://docs.inference.net/api/data-retention
+  default: Request data is not used for model training by default; encryption in
+    transit and at rest; project-level retention controls.
+notes:
+- No documented idempotency-key contract was found; not asserted.

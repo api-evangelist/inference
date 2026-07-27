@@ -1,0 +1,53 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.inference.net/cli/overview
+name: Inference CLI
+binary: inf
+description: >-
+  Terminal tool to instrument codebases for LLM observability and operate the
+  Catalyst platform programmatically without the dashboard.
+install:
+- method: npm
+  command: npm install -g @inference/cli
+authentication:
+  docs: https://docs.inference.net/cli/authentication
+  methods:
+  - Interactive sign-in
+  - API key (for CI)
+command_groups:
+- name: auth
+  description: Authentication management.
+  docs: https://docs.inference.net/cli/authentication
+- name: project
+  description: List, switch, and inspect projects.
+  docs: https://docs.inference.net/cli/projects
+- name: models
+  description: Browse callable models, providers, capabilities, and pricing.
+  docs: https://docs.inference.net/cli/models
+- name: eval
+  description: Create rubrics, launch eval runs, and inspect results.
+  docs: https://docs.inference.net/cli/evals
+- name: dataset
+  description: Upload JSONL inference data and materialize eval/training datasets.
+  docs: https://docs.inference.net/cli/datasets
+- name: training
+  description: Queue training runs, discover recipes/base models, monitor progress.
+  docs: https://docs.inference.net/cli/training
+- name: inference
+  description: List, filter, sort, and export captured inference requests/responses.
+  docs: https://docs.inference.net/cli/inferences
+- name: trace
+  description: Browse trace trees, inspect facets, manage trace exports.
+  docs: https://docs.inference.net/cli/traces
+- name: span
+  description: Search spans, inspect span payloads, debug trace steps.
+  docs: https://docs.inference.net/cli/spans
+- name: instrument
+  description: Automatically instrument a codebase to route LLM calls through Catalyst.
+  docs: https://docs.inference.net/cli/instrument
+- name: halo
+  description: Run HALO agent-trace analyses, schedule reports, pull report markdown.
+  docs: https://docs.inference.net/cli/halo
+- name: dashboard
+  description: Launch the interactive terminal dashboard.
+  docs: https://docs.inference.net/cli/dashboard

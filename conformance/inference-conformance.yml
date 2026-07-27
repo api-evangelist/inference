@@ -1,0 +1,25 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.inference.net/api/api-quickstart
+standards:
+- id: openai-api-compatible
+  conforms: true
+  evidence: >-
+    Docs state "The Inference.net API is OpenAI-compatible, so you can use the OpenAI
+    SDK or plain HTTP"; base_url https://api.inference.net/v1 accepts OpenAI Chat
+    Completions requests.
+- id: oauth2
+  conforms: false
+  evidence: Authentication is Bearer API key, not OAuth 2.0.
+- id: mcp
+  conforms: true
+  evidence: Hosted MCP server published at https://mcp.inference.net/mcp (see mcp/inference-mcp.yml).
+- id: opentelemetry
+  conforms: true
+  evidence: >-
+    Catalyst tracing built on OpenTelemetry instrumentation (org publishes
+    openinference — OpenTelemetry Instrumentation for AI Observability).
+notes:
+- A trust center exists at https://trust.inference.net but its certification list
+  could not be verified programmatically (bot-blocked); no compliance certifications
+  (SOC 2 / ISO 27001 / etc.) are asserted here to avoid fabrication.

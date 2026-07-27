@@ -1,0 +1,39 @@
+generated: '2026-07-19'
+method: searched
+source: https://docs.inference.net/api/async-inference/webhooks/quick-reference
+spec_type: Webhooks
+docs: https://docs.inference.net/api/async-inference/webhooks/getting-started-with-webhooks
+description: >-
+  Webhooks deliver results of asynchronous inference (batch and grouped requests).
+  Each delivery is a JSON envelope with top-level `event`, `timestamp`, and
+  `webhook_id`, plus a `data` object holding the result (state, message, original
+  request, and an OpenAI-format `response`). Individual events carry `generation_id`;
+  batch/group events carry `group_id`.
+events:
+- name: generation.completed
+  description: Fires when a chat completion finishes.
+- name: async-embedding.completed
+  description: Fires when an embedding request completes.
+- name: slow-group.completed
+  description: Fires when a batch of grouped requests finishes.
+headers:
+- X-Inference-Event
+- X-Inference-Webhook-ID
+- X-Inference-Generation-ID
+- X-Inference-Group-ID
+- User-Agent
+- Content-Type
+envelope:
+  fields:
+  - event
+  - timestamp
+  - webhook_id
+  - data
+  data_fields:
+  - state
+  - message
+  - request
+  - response
+notes:
+- The quick-reference did not document a signature/HMAC verification header; the
+  listed X-Inference-* headers are informational. Not asserting signed webhooks.
