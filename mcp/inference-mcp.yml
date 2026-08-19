@@ -9,11 +9,10 @@ server:
   authentication:
     type: bearer
     description: 'Project API key passed as `Authorization: Bearer <your-project-api-key>`.'
-description: >-
-  The Inference MCP server lets compatible AI coding assistants query and operate
-  Catalyst resources (projects, agents, models, datasets, rubrics, evals, training
-  jobs, deployments, inferences, traces, and HALO reports) directly from a project.
-  Hosted, remote HTTP transport with a custom Authorization header.
+description: The Inference MCP server lets compatible AI coding assistants query and operate Catalyst
+  resources (projects, agents, models, datasets, rubrics, evals, training jobs, deployments, inferences,
+  traces, and HALO reports) directly from a project. Hosted, remote HTTP transport with a custom Authorization
+  header.
 clients:
 - Claude Code
 - Cursor
@@ -29,3 +28,10 @@ capabilities:
 - Inference history and trace analysis
 - HALO agent-trace report generation and fix application
 - Scheduling management for automated HALO runs
+deployment:
+  mode: remote
+  endpoint: https://mcp.inference.net/mcp
+  verified: probed
+  probe: gated
+  checked: '2026-08-12'
+  source: catalog MCP census
