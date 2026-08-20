@@ -36,6 +36,17 @@ modified: '2026-07-19'
 tags:
 - Company
 - Artificial Intelligence
+- Machine-Learning
+- LLM
+- Inference
+- Observability
+- Model Training
+- Model Deployment
+- MCP
+- Crypto Web3
+tags_raw:
+- Company
+- Artificial Intelligence
 - Machine Learning
 - LLM
 - Inference
@@ -52,6 +63,10 @@ apis:
   humanURL: https://docs.inference.net/api/api-quickstart
   baseURL: https://api.inference.net/v1
   tags:
+  - LLM
+  - Inference
+  - OpenAI-Compatible
+  tags_raw:
   - LLM
   - Inference
   - OpenAI Compatible
