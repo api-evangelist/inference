@@ -38,7 +38,9 @@ accessModel:
   source:
   - plans
   - authentication
-  generated: '2026-07-22'
+  - rate-limits
+  - security
+  generated: '2026-09-03'
   method: derived
 image: https://inference.net/og/home.png
 specificationVersion: '0.23'
