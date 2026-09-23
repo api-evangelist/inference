@@ -1,0 +1,1 @@
+{"authorization_servers":["https://relay.inference.net"],"bearer_methods_supported":["header"],"resource":"https://mcp.inference.net/mcp","scopes_supported":["read","write","offline_access"]}

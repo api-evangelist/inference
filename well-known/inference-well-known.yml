@@ -1,28 +1,73 @@
-generated: '2026-07-19'
+generated: '2026-09-19'
 method: searched
 source: probe of /.well-known/* on provider hosts
 hosts:
 - host: https://api.inference.net
   documents:
-  - {path: /.well-known/security.txt, status: 404}
-  - {path: /.well-known/openid-configuration, status: 404}
-  - {path: /.well-known/oauth-authorization-server, status: 404}
-  - {path: /.well-known/api-catalog, status: 404}
-  - {path: /.well-known/ai-plugin.json, status: 404}
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
 - host: https://inference.net
   documents:
-  - {path: /.well-known/security.txt, status: 404}
-  - {path: /.well-known/openid-configuration, status: 404}
-  - {path: /.well-known/oauth-authorization-server, status: 404}
-  - {path: /.well-known/api-catalog, status: 404}
-  - {path: /.well-known/ai-plugin.json, status: 404}
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
 - host: https://docs.inference.net
   documents:
-  - {path: /.well-known/security.txt, status: 404}
-  - {path: /.well-known/openid-configuration, status: 404}
-  - {path: /.well-known/oauth-authorization-server, status: 404}
-  - {path: /.well-known/api-catalog, status: 404}
-  - {path: /.well-known/ai-plugin.json, status: 404}
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://mcp.inference.net
+  documents:
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: inference-mcp-oauth-protected-resource.json
+    bytes: 191
+  path_echo_control: passed
+- host: https://relay.inference.net
+  documents:
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: inference-relay-oauth-authorization-server.json
+    bytes: 1509
+  path_echo_control: passed
 notes:
-- No /.well-known documents were published on any probed host (all 404). No
-  WellKnown/SecurityTxt pointer wired.
+- No /.well-known documents were published on any probed host (all 404). No WellKnown/SecurityTxt pointer
+  wired.
+x-mcp-probe:
+  probed: '2026-09-19'
+  issue: roadmap#321, roadmap#337
+  documents:
+  - host: https://mcp.inference.net
+    path: /.well-known/oauth-protected-resource
+    file: inference-mcp-oauth-protected-resource.json
+  - host: https://relay.inference.net
+    path: /.well-known/oauth-authorization-server
+    file: inference-relay-oauth-authorization-server.json
+  validated_on: resource (RFC 9728) / issuer (RFC 8414, OIDC)
+  negative_control: one per host; a 2xx JSON object at an impossible path discards the host
+note: 'MCP-host OAuth discovery added 2026-09-19 (roadmap#321/#337): the harvest visits a provider''s
+  primary hosts, and RFC 9728 protected-resource metadata lives on the MCP host, so these documents existed
+  and were invisible to the scorer. Fetched live and validated on `resource`/`issuer`; one negative control
+  per host.'
