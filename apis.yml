@@ -49,14 +49,13 @@ modified: '2026-07-19'
 tags:
 - Company
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - LLM
 - Inference
 - Observability
 - Model Training
 - Model Deployment
 - MCP
-- Crypto Web3
 tags_raw:
 - Company
 - Artificial Intelligence
@@ -67,7 +66,7 @@ tags_raw:
 - Model Training
 - Model Deployment
 - MCP
-- Crypto Web3
+- Machine-Learning
 apis:
 - name: Inference.net API
   description: 'OpenAI-compatible inference API for open-source, frontier, and custom
@@ -151,3 +150,5 @@ x-enrichment:
   status: backfilled
   pass: local-v1
   note: backfilled from .gitignore signal + verified work evidence
+x-tags-removed:
+- Crypto Web3
