@@ -38,3 +38,30 @@ notes:
 - All plans include monthly credits applicable toward fine-tuning, evals, gateway
   routing, and observability.
 - Per-token model pricing is listed per-model in the models catalog (https://inference.net/models).
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - hybrid
+  - metered
+  - negotiated
+  units: []
+  plans:
+  - name: Pay as you go
+    access: other
+    model: metered
+    model_how: derived
+    units: []
+    periods: []
+  - name: Growth
+    access: other
+    model: hybrid
+    model_how: derived
+    units: []
+    periods: []
+  - name: Enterprise
+    access: other
+    model: negotiated
+    model_how: derived
+    units: []
+    periods: []
