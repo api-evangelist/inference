@@ -64,6 +64,120 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Inference is a company surfaced as a portfolio company of multicoin-capital and added to the API Evangelist network as a stub for enrichment. Sector: crypto-web3. This profile is a lead awaiting the enrichment pipeline.
+Inference (inference.net) is an AI infrastructure platform for AI-native teams. It offers an OpenAI-compatible inference API for open-source, frontier, and custom fine-tuned language models, alongside Catalyst — its observability, tracing, evaluation, training, and deployment platform. Developers call chat completions, batch/async inference, function calling, structured outputs, and vision endpoints at https://api.inference.net/v1 using a Bearer API key; route and monitor traffic through the Catalyst Gateway; fine-tune and deploy custom models; and optimize agents end to end with HALO. The platform ships a first-party CLI (inf), a hosted MCP server, and webhooks for asynchronous inference. Backed by Multicoin Capital.
 
-Backed by: multicoin-capital — https://inference.supply
+**Areas:** Company · Artificial Intelligence · Machine Learning · LLM · Inference · Observability · Model Training · Model Deployment · MCP
+
+## Inference on APIs.io
+
+Everything profiled for Inference is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/inference/](https://apis.io/providers/inference/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Inference.net API](https://apis.io/apis/inference/inferencenet-api/) — OpenAI-compatible inference API for open-source, frontier, and custom language models — chat completions, batch/async inference, function calling,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Inference Webhooks](https://apis.io/asyncapis/inference/inference-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [inference](https://apis.io/servers/inference/inference/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Inference Authentication](https://apis.io/security/inference/inference-authentication/)
+- [Inference Domain Security](https://apis.io/security/inference/inference-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Inference Plans](https://apis.io/plans/inference/inference-plans/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Inference Rate Limits](https://apis.io/rate-limits/inference/inference-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://inference.net)
+- [Documentation](https://docs.inference.net)
+- [Getting started](https://docs.inference.net/api/api-quickstart)
+- [API reference](https://docs.inference.net/api/api-quickstart)
+- [Pricing](https://inference.net/pricing)
+- [Sign up](https://inference.net/register)
+- [Blog](https://inference.net/blog)
+- [Trust centre](https://trust.inference.net)
+- [Terms of service](https://inference.net/terms-of-service)
+- [Privacy policy](https://inference.net/privacy-policy)
+- [GitHub](https://github.com/context-labs)
+
+## API Evangelist rating
+
+**Kin Score 54.4** — strong · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 39.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 42.1 |
+| Developer ergonomics | 59.5 |
+| Access clarity | 80.3 |
+
+**Agent readiness 47.1** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | verified |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 25.0** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/inference/](https://apis.io/providers/inference/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Inference: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/inference/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
